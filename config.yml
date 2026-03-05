@@ -1,0 +1,46 @@
+report:
+  title: "OpenClaw Ecosystem Pulse"
+  slug: "openclaw-ecosystem-pulse"
+  analyst_role: "AI agent ecosystem analyst specializing in open-source personal assistant frameworks"
+  reader_context: "an active builder deploying a personal AI assistant (Luma) who needs to stay current on OpenClaw patterns, security threats, spinoff projects, and ecosystem shifts that could affect architecture decisions"
+  frequency_description: "weekly"
+  watch:
+    name: "IronClaw Watch"
+    tag: "ironclaw_watch"
+    no_news: "No significant IronClaw news this cycle."
+
+feeds:
+  - name: "OpenClaw Newsletter"
+    url: "https://buttondown.com/openclaw-newsletter/rss"
+
+  - name: "OpenClaw GitHub Releases"
+    url: "https://github.com/openclaw/openclaw/releases.atom"
+
+  - name: "Hacker News — OpenClaw"
+    url: "https://hnrss.org/newest?q=openclaw&points=20"
+
+  - name: "Google News — OpenClaw"
+    url: "https://news.google.com/rss/search?q=%22openclaw%22+OR+%22open+claw%22+AI+agent&hl=en-US&gl=US&ceid=US:en"
+
+  - name: "Google News — Spinoffs"
+    url: "https://news.google.com/rss/search?q=%22ironclaw%22+OR+%22zeroclaw%22+OR+%22nanoclaw%22+OR+%22picoclaw%22+AI+agent&hl=en-US&gl=US&ceid=US:en"
+
+  - name: "The Hacker News (Security)"
+    url: "https://feeds.feedburner.com/TheHackersNews"
+
+  - name: "Dark Reading (Security)"
+    url: "https://www.darkreading.com/rss.xml"
+
+  - name: "Hacker News — AI Agent Frameworks"
+    url: "https://hnrss.org/newest?q=personal+AI+assistant+OR+AI+agent+framework&points=30"
+
+  - name: "IronClaw Watch"
+    url: "https://news.google.com/rss/search?q=%22ironclaw%22+AI+agent+OR+%22iron+claw%22+rust+agent&hl=en-US&gl=US&ceid=US:en"
+    tag: "ironclaw_watch"
+
+settings:
+  lookback_days: 7
+  max_articles_per_feed: 10
+  model: "claude-haiku-4-5-20251001"
+  max_tokens: 2000
+  report_dir: "reports"
